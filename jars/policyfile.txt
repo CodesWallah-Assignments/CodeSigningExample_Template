@@ -1,0 +1,15 @@
+keystore "demokeys";
+
+grant signedBy "friend" {
+	permission java.io.FilePermission "question.txt", "read";
+	permission java.io.FilePermission "answer.txt", "read";
+};
+
+grant signedBy "stranger" {
+	permission java.io.FilePermission "question.txt", "read";
+};
+
+grant codeBase "file:${com.codeswallah.jvm.home}/codesigner/ex2/jars/*" {
+	permission java.io.FilePermission "question.txt", "read";
+	permission java.io.FilePermission "answer.txt", "read";
+};

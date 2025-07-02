@@ -5,7 +5,7 @@
 
 	For Doer.java
  ```
-	javac -d . com/codeswallah/security/stranger/*.java
+	javac -d . com/codeswallah/security/doer/*.java
  ```
 
 
